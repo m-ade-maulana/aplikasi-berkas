@@ -10,6 +10,9 @@
 	<!-- datatable -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/3fee3556d5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -53,7 +56,7 @@
 							</div>
 							<div class="col-2">
 								<div class="d-gap d-grid">
-									<button type="submit" class="btn btn-primary fw-bold">Upload Berkas</button>
+									<button type="submit" class="btn btn-primary fw-bold"><i class="fa-solid fa-upload"></i> Upload Berkas</button>
 								</div>
 							</div>
 						</div>
@@ -84,7 +87,7 @@
 											<div class="row">
 												<div class="col-sm-12">
 													<div class="d-grid d-gap">
-														<a href="<?= base_url('./upload/') ?>" class="btn btn-primary">Download</a>
+														<a href="<?= base_url('./upload/') ?>" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download</a>
 													</div>
 												</div>
 											</div>
