@@ -59,7 +59,7 @@ class Dashboard extends CI_Controller
             }
             $this->session->set_flashdata('message', $this->messageAlert($this->upload->display_errors()));
             // echo "Gagal Upload Foto";
-            redirect('welcome');
+            redirect('dashboard');
         } else {
             // echo "Berhasil Upload Foto";
             // $nrk = $this->session->userdata('nrk');
@@ -75,10 +75,10 @@ class Dashboard extends CI_Controller
             $insert = $this->db->insert('tb_berkas', $data);
             if ($insert) {
                 $this->session->set_flashdata('message', $this->messageAlert('Upload Berhasil'));
-                redirect('welcome');
+                redirect('dashboard');
             } else {
                 $this->session->set_flashdata('message', $this->messageAlert('Upload Gagal'));
-                redirect('welcome');
+                redirect('dashboard');
             }
         }
     }
