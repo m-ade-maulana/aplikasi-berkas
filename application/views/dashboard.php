@@ -103,7 +103,7 @@
 			</div>
 		</div>
 		<div class="mt-5">
-			<p class="text-center">Created By <a href="https://m-ade-maulana.github.io/" class="text-decoration-none">M Ade Maulana</a></p>
+			<p class="text-center">Created By <a href="https://m-ade-maulana.github.io/" class="text-decoration-none" target="_blank">M Ade Maulana</a></p>
 		</div>
 	</div>
 
