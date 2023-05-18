@@ -32,7 +32,8 @@ class Dashboard extends CI_Controller
 
     public function index()
     {
-        $data['data_upload'] = $this->db->get('tb_berkas')->result_array();
+        $nomor_nrk = $this->session->userdata('nomor_nrk');
+        $data['data_upload'] = $this->db->get_where('tb_berkas', ['nomor_nrk' => $nomor_nrk])->result_array();
         $this->load->view('dashboard', $data);
     }
 
